@@ -1,0 +1,19 @@
+<!-- Simple web page (input -- submit button)  -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Demo application</title>
+</head>
+<body>
+<center>
+	<!-- add podstalCodeSearch Url -->
+        <form action="/postalCodeSearch">
+            <h3>PostalCode</h3>
+            <input type="text" name="PostalCode" required="required" pattern="[0-9]{1,20}" id="myInput">
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+</center>
+</body>
+</html>
